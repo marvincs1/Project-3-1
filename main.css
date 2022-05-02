@@ -101,7 +101,7 @@ body > header > img {
 }
 
 h1 {
-	text-indent: 11em;
+	text-indent: center;
 color: black;
 }
 
@@ -159,4 +159,9 @@ body > footer {
 	clear: left;
 	height: 60px;
 }
+
+.jumbotron  {
+	padding top: 10px;
+	color: blue;
+	
 
