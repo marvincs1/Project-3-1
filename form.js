@@ -1,11 +1,13 @@
+"use strict";
+
 var currentTab = 0; // Current tab is set to be the first tab (0)
 showTab(currentTab); // Display the current tab
 
 function showTab(n) {
-  // This function will display the specified tab of the form ...
+  // This function will display the specified tab of the form...
   var x = document.getElementsByClassName("tab");
   x[n].style.display = "block";
-  // ... and fix the Previous/Next buttons:
+  //... and fix the Previous/Next buttons:
   if (n == 0) {
     document.getElementById("prevBtn").style.display = "none";
   } else {
@@ -16,7 +18,7 @@ function showTab(n) {
   } else {
     document.getElementById("nextBtn").innerHTML = "Next";
   }
-  // ... and run a function that displays the correct step indicator:
+  //... and run a function that will display the correct step indicator:
   fixStepIndicator(n)
 }
 
@@ -29,9 +31,9 @@ function nextPrev(n) {
   x[currentTab].style.display = "none";
   // Increase or decrease the current tab by 1:
   currentTab = currentTab + n;
-  // if you have reached the end of the form... :
+  // if you have reached the end of the form...
   if (currentTab >= x.length) {
-    //...the form gets submitted:
+    // ... the form gets submitted:
     document.getElementById("regForm").submit();
     return false;
   }
@@ -50,7 +52,7 @@ function validateForm() {
     if (y[i].value == "") {
       // add an "invalid" class to the field:
       y[i].className += " invalid";
-      // and set the current valid status to false:
+      // and set the current valid status to false
       valid = false;
     }
   }
@@ -67,35 +69,6 @@ function fixStepIndicator(n) {
   for (i = 0; i < x.length; i++) {
     x[i].className = x[i].className.replace(" active", "");
   }
-  //... and adds the "active" class to the current step:
+  //... and adds the "active" class on the current step:
   x[n].className += " active";
-}
-
-let slideIndex = 1;
-showSlides(slideIndex);
-
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
 }
