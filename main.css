@@ -88,9 +88,9 @@ body {
 color: black;
 background-color: #182544;
 margin: 0 auto;
-width: 100%;
-max-width: 1020px;
-min-width: 640px;
+width: auto;
+max-width: auto;
+min-width: auto;
 }
 
 /* Heading Styles */
