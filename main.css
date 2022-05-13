@@ -89,8 +89,6 @@ color: black;
 background-color: #182544;
 margin: 0 auto;
 width: auto;
-max-width: auto;
-min-width: auto;
 }
 
 /* Heading Styles */
@@ -101,8 +99,7 @@ body > header > img {
 }
 
 h1 {
-	text-indent: center;
-color: black;
+color: white;
 }
 
 /* Navigation Styles */	
