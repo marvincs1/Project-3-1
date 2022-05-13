@@ -9,12 +9,12 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="main.css">
+<link rel="stylesheet" href="main2.css">
       
    </head>
       
-   <body>
    <header>
-  <img src="me.jpg" alt="My Lastname" />
+  <img src="me.jpg" alt="lastname" />
 <nav>
    <ul>
   <li><a href="index.html">Hobbies</a></li>
@@ -25,126 +25,29 @@
 </nav>
    </header>
 
-<style>
-body {
-  font-family: Arial;
-  margin: 0 auto;
-}
 
-* {
-  box-sizing: border-box;
-}
-
-img {
-  vertical-align: middle;
-}
-
-/* Position the image container (needed to position the left and right arrows) */
-.container {
-  position: relative;
-}
-
-/* Hide the images by default */
-.mySlides {
-  display: none;
-}
-
-/* Add a pointer when hovering over the thumbnail images */
-.cursor {
-  cursor: pointer;
-}
-
-/* Next & previous buttons */
-.prev,
-.next {
-  cursor: pointer;
-  position: absolute;
-  top: 40%;
-  width: auto;
-  padding: 16px;
-  margin-top: -50px;
-  color: white;
-  font-weight: bold;
-  font-size: 20px;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-  -webkit-user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* Container for image text */
-.caption-container {
-  text-align: center;
-  background-color: #222;
-  padding: 2px 16px;
-  color: white;
-}
-
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Six columns side by side */
-.column {
-  float: left;
-  width: 16.66%;
-}
-
-/* Add a transparency effect for thumnbail images */
-.demo {
-  opacity: 0.6;
-}
-
-.active,
-.demo:hover {
-  opacity: 1;
-}
-</style>
-<body>
 
 <h2 style="text-align:center">Slideshow Gallery</h2>
 
 <div class="container">
   <div class="mySlides">
     <div class="numbertext">1 / 4</div>
-    <img src="beach.jpg" style="width:100%">
+    <img src="beach.jpg" alt="water" style="width:100%">
   </div>
 
   <div class="mySlides">
     <div class="numbertext">2 / 4</div>
-    <img src="book.jpeg" style="width:100%">
+    <img src="book.jpeg" alt="book" style="width:100%">
   </div>
 
   <div class="mySlides">
     <div class="numbertext">3 / 4</div>
-    <img src="scream.jfif" style="width:100%">
+    <img src="scream.jfif" alt="scream" style="width:100%">
   </div>
     
   <div class="mySlides">
     <div class="numbertext">4 / 4</div>
-    <img src="ball.jpg" style="width:100%">
+    <img src="ball.jpg" alt="ball" style="width:100%">
   </div>
     
   <a class="prev" onclick="plusSlides(-1)">❮</a>
@@ -219,10 +122,7 @@ function showSlides(n) {
   </div>
 </div>
       
-</body>
-</html>
 
-   
   <footer>
         Last updated on Apr. 22nd <br> <a
       href="mailto:mcxs86@gmail.com">Email Me</a>
